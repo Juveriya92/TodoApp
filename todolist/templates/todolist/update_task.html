@@ -1,0 +1,19 @@
+{% extends "todolist/base.html" %}
+{% block content %}
+
+<div class="card">
+  <h5 class="card-header">Update Task</h5>
+  <div class="card-body">
+
+<form method="POST" action="">
+   {% csrf_token %}
+   {{form.as_p}}
+
+   <input type="submit" value="Update">
+
+</form>
+</div>
+</div>
+
+{% endblock %}
+

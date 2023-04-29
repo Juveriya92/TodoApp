@@ -53,3 +53,6 @@ def DeleteTask(request,pk):
         return redirect("/")
 
     return render(request,'todolist/delete_task.html',context)
+
+def home(response):
+    return render(response,'todolist/extended2.html',{})
